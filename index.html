@@ -1,17 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Blog Pribadi Varel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Infrastructure Blog</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #0a2540;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #133b5c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    article {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article h2 {
+      color: #0a2540;
+    }
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Selamat Datang di Blog Saya</h1>
-    <p>Ini adalah blog pertama saya yang di-host di GitHub Pages.</p>
 
-    <h2>Postingan</h2>
-    <ul>
-        <li>Pengalaman belajar HTML</li>
-        <li>Kenapa saya tertarik di dunia IT</li>
-        <li>Belajar hosting gratis dengan GitHub Pages</li>
-    </ul>
+  <header>
+    <h1>IT Infrastructure Blog</h1>
+    <p>Membahas dasar hingga perkembangan infrastruktur teknologi informasi</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#server">Server</a>
+    <a href="#network">Networking</a>
+    <a href="#security">Security</a>
+  </nav>
+
+  <div class="container">
+
+    <article id="intro">
+      <h2>Apa itu IT Infrastructure?</h2>
+      <p>
+        IT Infrastructure adalah kumpulan perangkat keras (hardware), perangkat lunak (software),
+        jaringan, data center, serta layanan yang digunakan untuk mendukung operasional sistem
+        teknologi informasi dalam suatu organisasi.
+      </p>
+      <p>
+        Infrastruktur IT berperan penting agar sistem informasi berjalan dengan stabil, aman,
+        dan efisien.
+      </p>
+    </article>
+
+    <article id="server">
+      <h2>Server dan Fungsinya</h2>
+      <p>
+        Server adalah komputer khusus yang menyediakan layanan kepada client.
+        Contohnya web server, database server, dan file server.
+      </p>
+      <ul>
+        <li><b>Web Server</b> – Menyajikan website (Apache, Nginx)</li>
+        <li><b>Database Server</b> – Menyimpan dan mengelola data (MySQL, PostgreSQL)</li>
+        <li><b>Application Server</b> – Menjalankan aplikasi</li>
+      </ul>
+    </article>
+
+    <article id="network">
+      <h2>Jaringan (Networking)</h2>
+      <p>
+        Jaringan adalah komponen penting dalam IT Infrastructure yang menghubungkan
+        perangkat satu dengan lainnya.
+      </p>
+      <p>Contoh perangkat jaringan:</p>
+      <ul>
+        <li>Router</li>
+        <li>Switch</li>
+        <li>Access Point</li>
+        <li>Firewall</li>
+      </ul>
+    </article>
+
+    <article id="security">
+      <h2>Keamanan Infrastruktur IT</h2>
+      <p>
+        Keamanan bertujuan melindungi data dan sistem dari ancaman seperti hacker,
+        malware, dan kebocoran data.
+      </p>
+      <p>Beberapa langkah keamanan:</p>
+      <ol>
+        <li>Firewall dan IDS/IPS</li>
+        <li>Backup data rutin</li>
+        <li>Manajemen akses pengguna</li>
+        <li>Update sistem secara berkala</li>
+      </ol>
+    </article>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 IT Infrastructure Blog | Dibuat dengan HTML</p>
+  </footer>
+
 </body>
 </html>
