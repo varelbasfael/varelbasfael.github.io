@@ -3,160 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancaman Siber 2026 di Asia Pasifik</title>
+    <title>Ancaman Siber 2026 | CyberTech Blog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #f4f6f9;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
         }
 
-        header {
-            background-color: #0b3d91;
-            color: white;
-            padding: 20px 40px;
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
+        nav h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #38bdf8;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
         }
 
-        .meta {
+        nav ul li a {
+            text-decoration: none;
+            color: #cbd5e1;
             font-size: 14px;
-            color: gray;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            font-weight: 700;
             margin-bottom: 20px;
         }
 
-        h2 {
-            color: #0b3d91;
-            margin-top: 30px;
+        .hero span {
+            color: #38bdf8;
         }
 
-        p {
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.8;
             line-height: 1.7;
+        }
+
+        /* Content */
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
             margin-bottom: 15px;
+            color: #38bdf8;
         }
 
-        .highlight {
-            background-color: #eef3ff;
-            padding: 15px;
-            border-left: 5px solid #0b3d91;
-            margin: 20px 0;
-        }
-
-        footer {
-            margin-top: 40px;
-            text-align: center;
+        .card p {
+            line-height: 1.8;
             font-size: 14px;
-            padding: 20px;
-            background-color: #0b3d91;
+            opacity: 0.9;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: linear-gradient(135deg, #0ea5e9, #2563eb);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
             color: white;
+            font-weight: 500;
         }
 
-        a {
-            color: #0b3d91;
-            text-decoration: none;
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f172a;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 14px;
+            color: #94a3b8;
         }
 
-        a:hover {
-            text-decoration: underline;
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav {
+                padding: 20px;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Asia Pasifik Hadapi Ancaman Siber Berkecepatan Mesin pada 2026</h1>
-</header>
+<nav>
+    <h1>CyberTech 2026</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cyber News</a></li>
+        <li><a href="#">AI Security</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Ancaman Siber <span>Berkecepatan Mesin</span> di Asia Pasifik</h2>
+    <p>
+        Tahun 2026 diprediksi menjadi era serangan siber otomatis berbasis AI.
+        Organisasi harus siap menghadapi eksploitasi API dan sistem digital yang semakin kompleks.
+    </p>
+</section>
 
 <div class="container">
-    <div class="meta">
-        Ditulis oleh Varel Basfael | 2026 | Kategori: Cyber Security
-    </div>
-
-    <p>
-        Kawasan Asia Pasifik diprediksi akan menghadapi lonjakan ancaman siber pada tahun 2026. 
-        Serangan tidak lagi dilakukan secara manual oleh manusia, tetapi menggunakan kecerdasan buatan (AI) 
-        yang mampu bergerak dengan kecepatan mesin.
-    </p>
 
     <div class="highlight">
-        Serangan berbasis AI memungkinkan eksploitasi celah keamanan dalam hitungan detik, 
-        jauh lebih cepat dibanding respons manual tim keamanan.
+        Serangan berbasis AI dapat menemukan dan mengeksploitasi celah keamanan dalam hitungan detik,
+        melampaui kecepatan respons manusia.
     </div>
 
-    <h2>Ancaman AI Otonom</h2>
-    <p>
-        AI kini tidak hanya digunakan untuk membantu bisnis, tetapi juga dimanfaatkan oleh pelaku kejahatan siber.
-        Sistem otomatis mampu mencari celah keamanan, memindai API yang rentan, dan mengeksekusi serangan secara real-time.
-    </p>
+    <div class="card">
+        <h3>AI Otonom sebagai Senjata Siber</h3>
+        <p>
+            AI kini tidak hanya membantu bisnis, tetapi juga dimanfaatkan pelaku kejahatan siber.
+            Sistem otomatis mampu memindai ribuan endpoint, mencari API rentan, dan melakukan eksploitasi secara real-time.
+        </p>
+    </div>
 
-    <p>
-        Hal ini menyebabkan organisasi harus meningkatkan sistem pertahanan mereka agar mampu merespons serangan 
-        secara otomatis dan bukan hanya mengandalkan monitoring manual.
-    </p>
+    <div class="card">
+        <h3>Krisis Keamanan API</h3>
+        <p>
+            API menjadi target utama karena menjadi penghubung data antar sistem.
+            Banyak organisasi tidak menyadari API mana yang memproses data sensitif,
+            sehingga meningkatkan risiko kebocoran data dan serangan ransomware.
+        </p>
+    </div>
 
-    <h2>Krisis Keamanan API</h2>
-    <p>
-        API (Application Programming Interface) menjadi target utama karena menjadi penghubung antar sistem dan 
-        pengelola data sensitif. Banyak organisasi bahkan tidak mengetahui API mana saja yang aktif dan memproses data penting.
-    </p>
+    <div class="card">
+        <h3>Dampak pada Organisasi</h3>
+        <p>
+            Dampak ancaman ini mencakup gangguan operasional, kerugian finansial,
+            kebocoran data pelanggan, hingga hilangnya kepercayaan publik.
+            Tanpa strategi keamanan modern, risiko akan meningkat drastis.
+        </p>
+    </div>
 
-    <p>
-        Kurangnya inventarisasi dan pengawasan API dapat membuka peluang kebocoran data, penyalahgunaan akses, 
-        hingga serangan ransomware skala besar.
-    </p>
+    <div class="card">
+        <h3>Strategi Mitigasi 2026</h3>
+        <p>
+            Solusi mencakup AI-based threat detection, audit API berkala,
+            penerapan Zero Trust Architecture, dan monitoring otomatis 24/7
+            untuk menghadapi era serangan berkecepatan mesin.
+        </p>
+    </div>
 
-    <h2>Dampak bagi Organisasi</h2>
-    <p>
-        Jika tidak ditangani dengan baik, ancaman ini dapat menyebabkan:
-    </p>
-
-    <ul>
-        <li>Kebocoran data sensitif</li>
-        <li>Gangguan operasional layanan digital</li>
-        <li>Kerugian finansial besar</li>
-        <li>Turunnya kepercayaan publik</li>
-    </ul>
-
-    <h2>Solusi dan Mitigasi</h2>
-    <p>
-        Untuk menghadapi ancaman 2026, organisasi perlu menerapkan pendekatan keamanan proaktif, seperti:
-    </p>
-
-    <ul>
-        <li>Audit dan manajemen API secara berkala</li>
-        <li>Implementasi AI-based threat detection</li>
-        <li>Zero Trust Architecture</li>
-        <li>Monitoring real-time dan patch management</li>
-    </ul>
-
-    <p>
-        Dengan strategi keamanan yang tepat, organisasi dapat meminimalkan risiko dan 
-        menghadapi era serangan berkecepatan mesin dengan lebih siap.
-    </p>
-
-    <p>
-        Sumber referensi: 
-        <a href="https://www.liputan6.com/tekno/read/6272282/asia-pasifik-hadapi-ancaman-siber-berkecepatan-mesin-hingga-krisis-keamanan-api-pada-2026" target="_blank">
-            Liputan6.com - Ancaman Siber 2026
-        </a>
-    </p>
 </div>
 
 <footer>
-    © 2026 Varel Basfael | Blog Cyber Security
+    © 2026 Varel Basfael | Cyber Security Analysis Blog
 </footer>
 
 </body>
